@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+/* Paleta neutra/romántica — la afinamos después. Tailwind v4: el theme vive acá, no hay tailwind.config. */
+@theme inline {
+  --font-serif: var(--font-cormorant);
+  --font-sans: var(--font-inter);
+
+  --color-cream-50: #faf7f2;
+  --color-cream-100: #f3ede3;
+  --color-cream-200: #e8dfd0;
+
+  --color-ink-900: #3e3a36;
+  --color-ink-600: #6f6861;
+  --color-ink-400: #a39a90;
+
+  --color-olive-600: #7c8363;
+  --color-olive-700: #656b4f;
+
+  --color-blush-300: #d9b8a9;
+}
+
+body {
+  @apply bg-cream-50 text-ink-900 font-sans antialiased;
+}
+
+html {
+  scroll-behavior: smooth;
+}
